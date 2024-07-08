@@ -1,4 +1,4 @@
-import { Poppins, Redressed } from "next/font/google";
+import { Poppins, Redressed, Lora } from "next/font/google";
 
 const poppins = Poppins({
     subsets: ["latin-ext"],
@@ -14,4 +14,10 @@ const redressed = Redressed({
     preload: true,
 })
 
-export {poppins, redressed}
+const lora = Lora({
+    weight: ["700"],
+    subsets: ["cyrillic"],
+    style: ["normal"]
+})
+
+export {poppins, redressed, lora}
