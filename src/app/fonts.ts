@@ -1,23 +1,27 @@
-import { Poppins, Redressed, Lora } from "next/font/google";
+import { Poppins, Redressed, Lora, Inter } from "next/font/google";
 
 const poppins = Poppins({
-    subsets: ["latin-ext"],
-    weight: ["400"],
-    preload: true,
-    style: ["normal"]
-    
-})
+  subsets: ["latin"],
+  weight: ["400"],
+  preload: true,
+  style: ["normal"],
+});
 
 const redressed = Redressed({
-    subsets: ["latin"],
-    weight: ["400"],
-    preload: true,
-})
+  subsets: ["latin"],
+  weight: ["400"],
+  preload: true,
+});
 
 const lora = Lora({
-    weight: ["700"],
-    subsets: ["cyrillic"],
-    style: ["normal"]
-})
+  weight: ["700"],
+  subsets: ["cyrillic"],
+  style: ["normal"],
+});
 
-export {poppins, redressed, lora}
+const inter = Inter({
+  subsets: ["latin"],
+  style: ["normal"],
+});
+
+export { poppins, redressed, lora, inter };
