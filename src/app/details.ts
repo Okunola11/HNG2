@@ -115,10 +115,36 @@ const communitySection = {
     "Stay updated with the latest skincare tips, product launches, and exclusive offers",
 };
 
+const customerReviewSection = {
+  title: "Customer review",
+  intro: "In your own words-",
+  reviews: [
+    {
+      content:
+        "I’ve been using this RadiantGlow Vitamin C Serum for a few weeks, and my skin has never looked better! It’s brighter, smoother, and more even-toned.",
+      name: "- Jane D.",
+      date: "01/04/24",
+    },
+    {
+      content:
+        "My skin feels incredibly soft and hydrated all day long. I love the light, refreshing scent too!",
+      name: "- Jane D.",
+      date: "01/04/24",
+    },
+    {
+      content:
+        "This Repair scrub is a game-changer. It removed and faded all the stretch marks on my skin. Now I feel confident in my body.",
+      name: "- Jane D.",
+      date: "01/04/24",
+    },
+  ],
+};
+
 export {
   heroSection,
   collectionSection,
   featuredSection,
   mightLikeSection,
   communitySection,
+  customerReviewSection,
 };
