@@ -30,12 +30,12 @@ export const HeroBottom = () => {
           <p className="text-[14px] md:text-[18px] text-[#474747]">
             {heroSection.pIntro}
           </p>
-          <ul>
+          <ul className="mt-4">
             {heroSection.heroCheckmarks.map((point, i) => {
               return (
                 <li
                   key={i}
-                  className="flex gap-3 items-center text-[12px] md:text-[16px]"
+                  className="flex gap-3 items-center text-xs md:text-base mb-4 text-[#5A5A5A]"
                 >
                   <Image
                     src={"/images/hero/checkmark.svg"}
@@ -49,8 +49,8 @@ export const HeroBottom = () => {
               );
             })}
           </ul>
-          <div className="mt-8">
-            <button className="text-white h-[32px] md:h-12 text-[10px] md:text-[16px] px-4 bg-[#408C2B] rounded-[6px]">
+          <div className="mt-4">
+            <button className="text-white h-[32px] md:h-12 text-[10px] md:text-base px-4 bg-[#408C2B] rounded-[6px]">
               Shop Now ➜
             </button>
           </div>

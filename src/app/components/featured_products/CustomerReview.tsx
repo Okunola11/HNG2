@@ -56,11 +56,19 @@ export default function CustomerReview() {
         </div>
       </section>
       <div className="w-full">
-        <div className="grid place-content-center md:my-10 xl:my-14">
+        <div className="hidden md:grid place-content-center md:my-10 xl:my-14">
           <Image
             src={"/images/reviews/scroll.svg"}
             width={148}
             height={18}
+            alt="scroll"
+          />
+        </div>
+        <div className="md:hidden grid place-content-center md:my-10 xl:my-14">
+          <Image
+            src={"/images/reviews/scroll-small.svg"}
+            width={120}
+            height={12}
             alt="scroll"
           />
         </div>
