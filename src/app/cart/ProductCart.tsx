@@ -57,7 +57,7 @@ export default function ProductCheckout() {
             Our Repair Body Scrub is expertly crafted to rejuvenate and
             revitalize your skin. This luxurious scrub combines natural
             exfoliants with nourishing ingredients to gently remove dead skin
-            cells, promote cell renewal, and restore your skin's natural
+            cells, promote cell renewal, and restore your skin&apos;s natural
             radiance.
           </p>
           <p className="text-xs text-[#4EAB35]">

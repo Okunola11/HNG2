@@ -32,7 +32,11 @@ export default function Header() {
           </div>
         </section>
 
-        <p className={`${redressed.className} text-xl md:text-3xl text-[#408C2B]`}>Sharrie's Signature</p>
+        <p
+          className={`${redressed.className} text-xl md:text-3xl text-[#408C2B]`}
+        >
+          Sharrie&apos;s Signature
+        </p>
 
         <section className="flex gap-2">
           <div className="hidden md:flex w-[129px] h-[25px] justify-evenly items-center">
@@ -60,13 +64,14 @@ export default function Header() {
             <p className="hidden md:block">Cart</p>
           </div>
           <button type="button" className="items-center hidden md:block">
-          <Image
-                src={"/images/header/Avatar.svg"}
-                width="36" height="36"
-                alt="Shopping cart"
-                className="inline-block"
-              />
-            </button>
+            <Image
+              src={"/images/header/Avatar.svg"}
+              width="36"
+              height="36"
+              alt="Shopping cart"
+              className="inline-block"
+            />
+          </button>
         </section>
       </nav>
     </header>

@@ -35,7 +35,7 @@ export default function ProductHeader() {
         <p
           className={`${redressed.className} text-xl md:text-3xl text-[#408C2B]`}
         >
-          Sharrie's Signature
+          Sharrie&apos;s Signature
         </p>
 
         <section className="flex gap-2">
