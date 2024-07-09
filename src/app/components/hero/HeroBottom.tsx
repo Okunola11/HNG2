@@ -16,20 +16,27 @@ export const HeroBottom = () => {
           />
         </div>
         <div className="max-w-[550px] flex flex-col gap-4">
-          <div className="flex gap-6 items-center">
+          <div className="flex gap-4 md:gap-6 items-center">
             <div className="w-[10px] h-[10px] md:w-[18px] md:h-[18px] bg-[#2A5C1C] inline"></div>
-            <p className="text-[#4EAB35] text-[14px] md:text-2xl font-[300]">Our Product</p>
+            <p className="text-[#4EAB35] text-sm md:text-2xl font-[300] small-spacing md:big-spacing">
+              Our Product
+            </p>
           </div>
           <h3
             className={`font-[700] text-[#0A0B0A] text-[32px] md:text-[64px] ${lora.className}`}
           >
             Unlock Your Glow
           </h3>
-          <p className="text-[14px] md:text-[18px] text-[#474747]">{heroSection.pIntro}</p>
+          <p className="text-[14px] md:text-[18px] text-[#474747]">
+            {heroSection.pIntro}
+          </p>
           <ul>
             {heroSection.heroCheckmarks.map((point, i) => {
               return (
-                <li key={i} className="flex gap-3 items-center text-[12px] md:text-[16px]">
+                <li
+                  key={i}
+                  className="flex gap-3 items-center text-[12px] md:text-[16px]"
+                >
                   <Image
                     src={"/images/hero/checkmark.svg"}
                     width={24}

@@ -1,7 +1,5 @@
-import { Collections } from "../collections/Collections"
+import { Collections } from "../collections/Collections";
 
 export const CollectionSection = () => {
-  return (
-    <Collections />
-  )
-}
+  return <Collections />;
+};

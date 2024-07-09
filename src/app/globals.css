@@ -31,3 +31,12 @@ body {
     text-wrap: balance;
   }
 }
+
+/* Custom class for letters spacing */
+.big-spacing {
+  letter-spacing: 8px;
+}
+
+.small-spacing {
+  letter-spacing: 5px;
+}

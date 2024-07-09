@@ -1,17 +1,24 @@
-import { featuredSection } from "@/app/details";
+import { mightLikeSection } from "@/app/details";
 import { inter } from "@/app/fonts";
 import Image from "next/image";
 
-export const FeaturedProducts = () => {
+export const MightLikeProducts = () => {
   return (
     <section className="w-full mt-4 md:mt-14 md:min-h-[400px]">
       <div className="w-4/5 md:w-11/12 mx-auto pt-4">
-        <p className="mb-2 font-[300] text-sm md:text-2xl small-spacing md:big-spacing">
-          {featuredSection.featuredTitle}
-        </p>
+        <div className="flex justify-between">
+          <p className="mb-2 font-[300] text-sm md:text-2xl small-spacing md:big-spacing">
+            {mightLikeSection.featuredTitle}
+          </p>
+          <button
+            className={`h-[24px] md:h-[48px] px-2 md:px-4 text-xs md:text-base text-[#408C2B] font-500 ${inter.className} border-b border-[#408C2B]`}
+          >
+            View all
+          </button>
+        </div>
         <div className="h-[2px] w-full bg-[#E3E3E3] my-2"></div>
         <ul className="flex flex-wrap gap-1 md:gap-3 mt-8 justify-evenly md:w-5/6 mx-auto lg:w-full">
-          {featuredSection.products.map((product, i) => {
+          {mightLikeSection.products.map((product, i) => {
             return (
               <li key={i} className="w-[145px] md:w-[280px] lg:w-[350px]">
                 <div className="">
