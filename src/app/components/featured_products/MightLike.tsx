@@ -1,6 +1,7 @@
 import { mightLikeSection } from "@/app/details";
 import { inter } from "@/app/fonts";
 import Image from "next/image";
+import Link from "next/link";
 
 export const MightLikeProducts = () => {
   return (
@@ -40,7 +41,7 @@ export const MightLikeProducts = () => {
                     </p>
                   </div>
                   <button className="border-2 border-[#408C2B] rounded h-[30px] md:h-12 text-[#408C2B] text-[8px] md:text-[18px] p-2 lg:px-4 min-w-[70px]">
-                    Add to Cart
+                    <Link href={"/cart"}>Add to Cart</Link>
                   </button>
                 </div>
               </li>
