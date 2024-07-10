@@ -39,7 +39,7 @@ export const FeaturedProducts = () => {
                     </p>
                   </div>
                   <div className="w-2/4">
-                    <button className="border border-[#408C2B] rounded-md h-[30px] md:h-12 text-[#408C2B] text-xs md:text-base lg:text-lg p-2 lg:px-4">
+                    <button className="border border-[#408C2B] rounded-md h-[30px] md:h-12 text-[#408C2B] text-[10px] md:text-base lg:text-lg p-2 lg:px-4">
                       <Link href={"/cart"}>Add to Cart</Link>
                     </button>
                   </div>
