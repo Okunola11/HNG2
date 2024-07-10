@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export default function Header() {
   return (
-    <header className="mx-auto p-2 max-w-7xl text-xs dark:bg-black top-0 sticky">
+    <header className="mx-auto p-2 max-w-7xl text-xs bg-[#E4F5E0] dark:bg-black top-0 sticky">
       <nav className="flex justify-between items-center h-16 max-h-[102px]">
         <section className="flex">
           <div className="flex w-[102px] h-[25px] justify-evenly items-center">
