@@ -3,8 +3,8 @@ import { redressed } from "@/app/fonts";
 export const Footer = () => {
   return (
     <footer className="w-full mt-4 md:mt-14">
-      <div className="h-[2px] w-full bg-[#E3E3E3] my-2"></div>
-      <article className=" flex flex-col md:flex-row justify-between gap-10 md:gap-0 md:items-center w-4/5 md:w-11/12 mx-auto pt-4 md:min-h-[300px]">
+      <div className="h-[1px] w-full bg-[#E3E3E3] my-2"></div>
+      <article className=" flex flex-col md:flex-row justify-between gap-10 md:gap-0 md:items-center w-11/12 mx-auto pt-4 md:min-h-[300px]">
         <section className="flex flex-col gap-4">
           <p className="font-[300] text-base md:text-lg text-[#818181]">
             About us
@@ -61,7 +61,7 @@ export const Footer = () => {
         </section>
       </article>
       <article className="min-h-[100px] md:min-h-[130px]">
-        <div className="h-[2px] w-full bg-[#E3E3E3] mt-10"></div>
+        <div className="h-[1px] w-full bg-[#E3E3E3] mt-10"></div>
         <div className="w-4/5 md:w-11/12 mx-auto pt-4">
           <div>
             <div className="flex justify-between">

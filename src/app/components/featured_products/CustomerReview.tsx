@@ -5,14 +5,14 @@ export default function CustomerReview() {
   return (
     <>
       <section className="w-full mt-4 md:mt-14 h-auto">
-        <div className="w-4/5 md:w-11/12 mx-auto pt-4">
+        <div className="w-11/12 mx-auto pt-4">
           <p className="mb-2 font-[300] text-sm md:text-2xl small-spacing md:big-spacing">
             {customerReviewSection.title}
           </p>
-          <p className="font-[500] md:text-[40px] text-[#0A0B0A] my-4">
+          <p className="font-[500] text-3xl md:text-[40px] text-[#0A0B0A] my-4">
             {customerReviewSection.intro}
           </p>
-          <div className="flex w-full gap-4 md:gap-6 md:h-[330px]">
+          <div className="flex w-full gap-4 md:gap-6 max-h-[183px] md:max-h-[330px]">
             <div>
               <Image
                 src={"/images/reviews/review.png"}
@@ -26,7 +26,7 @@ export default function CustomerReview() {
                 return (
                   <li
                     key={i}
-                    className="md:w-[530px] border-2 border-[#CAECC0] flex-shrink-0 mr-2 p-2 rounded-[10px] flex flex-col"
+                    className="w-[200px] md:w-[530px] border-2 border-[#CAECC0] flex-shrink-0 mr-2 p-2 rounded-[10px] flex flex-col"
                   >
                     <div className="flex justify-between">
                       <Image
@@ -52,7 +52,7 @@ export default function CustomerReview() {
               })}
             </ul>
           </div>
-          <div className="h-[8px] w-5/6 bg-[#FAFAFA] my-2"></div>
+          <div className="h-[2px] w-5/6 bg-[#FAFAFA] my-6 mx-auto rounded-md"></div>
         </div>
       </section>
       <div className="w-full">

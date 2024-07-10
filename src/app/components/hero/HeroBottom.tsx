@@ -4,7 +4,7 @@ import { lora } from "@/app/fonts";
 
 export const HeroBottom = () => {
   return (
-    <section className="w-full bg-[#E4F5E0]">
+    <section className="w-full bg-[#E4F5E0] pb-8">
       <div className="w-4/5 md:w-11/12 flex flex-col md:flex-row gap-6 md:gap-[100px] mx-auto">
         <div className="w-full pt-6 md:mt-[110px] ">
           <Image
