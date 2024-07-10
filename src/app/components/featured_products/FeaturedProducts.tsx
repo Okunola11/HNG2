@@ -7,10 +7,12 @@ export const FeaturedProducts = () => {
   return (
     <section className="w-full mt-4 md:mt-14 md:min-h-[400px]">
       <div className="w-full mx-auto pt-4">
-        <p className="mb-2 font-[300] text-sm md:text-2xl small-spacing md:big-spacing">
-          {featuredSection.featuredTitle}
-        </p>
-        <div className="h-[1px] w-full bg-[#E3E3E3] my-2"></div>
+        <div className="px-4">
+          <p className="mb-2 font-[300] text-sm md:text-2xl small-spacing md:big-spacing">
+            {featuredSection.featuredTitle}
+          </p>
+          <div className="h-[1px] w-full bg-[#E3E3E3] my-2"></div>
+        </div>
         <ul className="flex flex-wrap gap-1 md:gap-4 mt-8 justify-evenly mx-auto">
           {featuredSection.products.map((product, i) => {
             return (
@@ -36,9 +38,11 @@ export const FeaturedProducts = () => {
                       {product.price}
                     </p>
                   </div>
-                  <button className="border border-[#408C2B] rounded-md h-[30px] md:h-12 text-[#408C2B] text-xs md:text-base lg:text-lg p-2 lg:px-4">
-                    <Link href={"/cart"}>Add to Cart</Link>
-                  </button>
+                  <div className="w-2/4">
+                    <button className="border border-[#408C2B] rounded-md h-[30px] md:h-12 text-[#408C2B] text-xs md:text-base lg:text-lg p-2 lg:px-4">
+                      <Link href={"/cart"}>Add to Cart</Link>
+                    </button>
+                  </div>
                 </div>
               </li>
             );
