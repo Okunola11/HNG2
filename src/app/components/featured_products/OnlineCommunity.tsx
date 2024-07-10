@@ -5,13 +5,11 @@ import { lora } from "@/app/fonts";
 export default function OnlineCommunity() {
   return (
     <section className="bg-[#E4F5E0] flex flex-col-reverse md:flex-row justify-between gap-4 mt-4 md:mt-14">
-      <div className="grid place-content-center p-10 gap-4 md:gap-8 max-w-[550px]">
+      <div className="grid place-content-center p-10 gap-4 md:gap-8 max-w-[550px] dark:text-black">
         <h3 className={`${lora.className} md:text-5xl lg:text-[64px]`}>
           {communitySection.title}
         </h3>
-        <p className="md:text-base dark:text-black">
-          {communitySection.paragraph}
-        </p>
+        <p className="md:text-base">{communitySection.paragraph}</p>
         <div>
           <button
             className={`h-[40px] md:h-[48px] px-4 text-sm md:text-lg text-[#408C2B] font-400 border-b-2 border-[#408C2B]`}

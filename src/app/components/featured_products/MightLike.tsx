@@ -23,7 +23,7 @@ export const MightLikeProducts = () => {
             return (
               <li
                 key={i}
-                className="max-w-[160px] md:max-w-[220px] lg:max-w-[300px] xl:max-w-[350px]"
+                className="max-w-[160px] md:max-w-[220px] lg:max-w-[295px] xl:max-w-[350px]"
               >
                 <div className="">
                   <Image
@@ -43,7 +43,7 @@ export const MightLikeProducts = () => {
                       {product.price}
                     </p>
                   </div>
-                  <button className="border border-[#408C2B] rounded-md h-[30px] md:h-12 text-[#408C2B] text-[8px] md:text-[18px] p-2 lg:px-4">
+                  <button className="border border-[#408C2B] rounded-md h-[30px] md:h-12 text-[#408C2B] text-xs md:text-base lg:text-lg p-2 lg:px-4">
                     <Link href={"/cart"}>Add to Cart</Link>
                   </button>
                 </div>

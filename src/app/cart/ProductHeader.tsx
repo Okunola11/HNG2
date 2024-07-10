@@ -1,9 +1,10 @@
 import Image from "next/image";
 import { redressed } from "@/app/fonts";
+import Link from "next/link";
 
 export default function ProductHeader() {
   return (
-    <header className="mx-auto p-2 max-w-7xl text-xs bg-[#e4f5e1] md:bg-transparent">
+    <header className="mx-auto p-2 max-w-7xl text-xs bg-[#e4f5e1] md:bg-transparent top-0 sticky md:dark:bg-black">
       <nav className="flex justify-between items-center h-16 max-h-[102px]">
         <section className="flex">
           <div className="flex w-[102px] h-[25px] justify-evenly items-center">
@@ -24,7 +25,7 @@ export default function ProductHeader() {
                 src={"/images/header/search.svg"}
                 width="24"
                 height="24"
-                alt="Menu button"
+                alt="Search button"
                 className="inline-block"
               />
             </button>
@@ -35,7 +36,7 @@ export default function ProductHeader() {
         <p
           className={`${redressed.className} text-xl md:text-3xl text-[#408C2B]`}
         >
-          Sharrie&apos;s Signature
+          <Link href="/">Sharrie&apos;s Signature</Link>
         </p>
 
         <section className="flex gap-2">

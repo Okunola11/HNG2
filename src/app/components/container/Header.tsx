@@ -1,9 +1,10 @@
 import Image from "next/image";
 import { redressed } from "@/app/fonts";
+import Link from "next/link";
 
 export default function Header() {
   return (
-    <header className="mx-auto p-2 max-w-7xl text-xs">
+    <header className="mx-auto p-2 max-w-7xl text-xs dark:bg-black top-0 sticky">
       <nav className="flex justify-between items-center h-16 max-h-[102px]">
         <section className="flex">
           <div className="flex w-[102px] h-[25px] justify-evenly items-center">
@@ -35,7 +36,7 @@ export default function Header() {
         <p
           className={`${redressed.className} text-xl md:text-3xl text-[#408C2B]`}
         >
-          Sharrie&apos;s Signature
+          <Link href={"#"}>Sharrie&apos;s Signature</Link>
         </p>
 
         <section className="flex gap-2">

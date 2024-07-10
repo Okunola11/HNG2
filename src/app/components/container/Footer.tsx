@@ -1,4 +1,5 @@
 import { redressed } from "@/app/fonts";
+import Link from "next/link";
 
 export const Footer = () => {
   return (
@@ -6,7 +7,7 @@ export const Footer = () => {
       <div className="h-[1px] w-full bg-[#E3E3E3] my-2"></div>
       <article className=" flex flex-col md:flex-row justify-between gap-10 md:gap-0 md:items-center w-11/12 mx-auto pt-4 md:min-h-[300px]">
         <section className="flex flex-col gap-4">
-          <p className="font-[300] text-base md:text-lg text-[#818181]">
+          <p className="font-[300] text-base md:text-lg text-[#818181] dark:text-[#e4f5e0]">
             About us
           </p>
           <p className="font-[400] text-base md:text-lg text-[#343434]">Shop</p>
@@ -16,7 +17,9 @@ export const Footer = () => {
           <p className="font-[400] text-base md:text-lg text-[#343434]">Blog</p>
         </section>
         <section className="flex flex-col gap-4">
-          <p className="font-[300] text-base md:text-lg text-[#818181]">Help</p>
+          <p className="font-[300] text-base md:text-lg text-[#818181] dark:text-[#e4f5e0]">
+            Help
+          </p>
           <p className="font-[400] text-base md:text-lg text-[#343434]">
             You can{" "}
             <span className="text-[#408C2B] border-[#408C2B] border-b">
@@ -29,7 +32,7 @@ export const Footer = () => {
           </p>
         </section>
         <section className="flex flex-col gap-4">
-          <p className="font-[300] text-base md:text-lg text-[#818181]">
+          <p className="font-[300] text-base md:text-lg text-[#818181] dark:text-[#e4f5e0]">
             Socials
           </p>
           <p className="font-[400] text-base md:text-lg text-[#343434]">
@@ -43,7 +46,7 @@ export const Footer = () => {
           </p>
         </section>
         <section className="flex flex-col gap-4">
-          <p className="font-[300] text-base md:text-lg text-[#818181]">
+          <p className="font-[300] text-base md:text-lg text-[#818181] dark:text-[#e4f5e0]">
             Email Sign-up
           </p>
           <div className="max-w-[300px] xl:max-w-[280px]">
@@ -82,7 +85,7 @@ export const Footer = () => {
             <p
               className={`text-base md:text-2xl font-[400] text-[#408C2B] ${redressed.className}`}
             >
-              Sharrie’s Signature
+              <Link href={"#"}>Sharrie&apos;s Signature</Link>
             </p>
           </div>
         </div>
