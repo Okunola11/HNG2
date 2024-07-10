@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export default function Header() {
   return (
-    <header className="mx-auto p-2 max-w-7xl text-xs bg-[#E4F5E0] dark:bg-black top-0 sticky">
+    <header className="mx-auto p-2 max-w-7xl text-xs bg-transparent dark:bg-black">
       <nav className="flex justify-between items-center h-16 max-h-[102px]">
         <section className="flex">
           <div className="flex w-[102px] h-[25px] justify-evenly items-center">
@@ -36,7 +36,7 @@ export default function Header() {
         <p
           className={`${redressed.className} text-xl md:text-3xl text-[#408C2B]`}
         >
-          <Link href={"#"}>Sharrie&apos;s Signature</Link>
+          <Link href={"/"}>Sharrie&apos;s Signature</Link>
         </p>
 
         <section className="flex gap-2">
@@ -54,13 +54,15 @@ export default function Header() {
           </div>
           <div className="flex w-[83px] h-[25px] justify-evenly items-center">
             <button type="button">
-              <Image
-                src={"/images/header/shopping-cart.svg"}
-                width="24"
-                height="24"
-                alt="Shopping cart"
-                className="inline-block"
-              />
+              <Link href={"/checkout"}>
+                <Image
+                  src={"/images/header/shopping-cart.svg"}
+                  width="24"
+                  height="24"
+                  alt="Shopping cart"
+                  className="inline-block"
+                />
+              </Link>
             </button>
             <p className="hidden md:block">Cart</p>
           </div>

@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 export default function Product() {
   return (
     <>
-      <ProductHeader />
+      {/* <ProductHeader /> */}
       <ProductCheckout />
       <MightLikeProducts />
     </>

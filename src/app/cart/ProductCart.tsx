@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { inter } from "../fonts";
+import Link from "next/link";
 
 export default function ProductCheckout() {
   return (
@@ -124,7 +125,7 @@ export default function ProductCheckout() {
             </div>
             <div>
               <button className="text-sm md:text-lg text-[#FAFAFA] bg-[#408C2B] rounded-md p-2 px-4">
-                checkout
+                <Link href={"/checkout"}>checkout</Link>
               </button>
             </div>
           </div>
