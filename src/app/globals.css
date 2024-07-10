@@ -40,3 +40,8 @@ body {
 .small-spacing {
   letter-spacing: 5px;
 }
+
+/* Scroll Behaviour */
+html {
+  scroll-behavior: smooth;
+}

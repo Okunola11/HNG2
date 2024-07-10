@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { heroSection } from "@/app/details";
 import { lora } from "@/app/fonts";
+import Link from "next/link";
 
 export const HeroBottom = () => {
   return (
@@ -51,7 +52,7 @@ export const HeroBottom = () => {
           </ul>
           <div className="mt-4">
             <button className="text-white h-[32px] md:h-12 text-[10px] md:text-base px-4 bg-[#408C2B] rounded-[6px]">
-              Shop Now ➜
+              <Link href={"#collections"}>Shop Now ➜</Link>
             </button>
           </div>
         </div>

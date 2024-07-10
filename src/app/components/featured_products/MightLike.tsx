@@ -30,7 +30,7 @@ export const MightLikeProducts = () => {
                     height={329}
                   />
                 </div>
-                <div className="h-[2px] w-full bg-[#E3E3E3] my-2"></div>
+                <div className="h-[1px] w-full bg-[#E3E3E3] my-2"></div>
                 <div className="flex justify-between">
                   <div className="max-w-[200px] md:w-[150px]">
                     <p className="text-[10px] md:text-[18px]">{product.name}</p>
@@ -40,7 +40,7 @@ export const MightLikeProducts = () => {
                       {product.price}
                     </p>
                   </div>
-                  <button className="border-2 border-[#408C2B] rounded h-[30px] md:h-12 text-[#408C2B] text-[8px] md:text-[18px] p-2 lg:px-4 min-w-[70px]">
+                  <button className="border border-[#408C2B] rounded-md h-[30px] md:h-12 text-[#408C2B] text-[8px] md:text-[18px] p-2 lg:px-4 min-w-[70px]">
                     <Link href={"/cart"}>Add to Cart</Link>
                   </button>
                 </div>
