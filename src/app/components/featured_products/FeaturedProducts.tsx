@@ -11,10 +11,13 @@ export const FeaturedProducts = () => {
           {featuredSection.featuredTitle}
         </p>
         <div className="h-[1px] w-full bg-[#E3E3E3] my-2"></div>
-        <ul className="flex flex-wrap gap-1 md:gap-3 mt-8 justify-evenly md:w-5/6 mx-auto lg:w-full">
+        <ul className="flex flex-wrap gap-1 md:gap-4 mt-8 justify-evenly mx-auto">
           {featuredSection.products.map((product, i) => {
             return (
-              <li key={i} className="w-[160px] md:min-[280px] lg:w-[350px]">
+              <li
+                key={i}
+                className="max-w-[160px] md:max-w-[220px] lg:max-w-[300px] xl:max-w-[350px]"
+              >
                 <div className="">
                   <Image
                     src={product.imgSrc}
@@ -24,8 +27,8 @@ export const FeaturedProducts = () => {
                   />
                 </div>
                 <div className="h-[0.5px] w-full bg-[#E3E3E3] my-2"></div>
-                <div className="flex justify-between">
-                  <div className="max-w-[200px] md:w-[150px]">
+                <div className="flex justify-between md:gap-1">
+                  <div className="w-2/4">
                     <p className="text-[10px] md:text-[18px]">{product.name}</p>
                     <p
                       className={`${inter.className} font-[600] text-[14px] md:text-xl`}
@@ -33,7 +36,7 @@ export const FeaturedProducts = () => {
                       {product.price}
                     </p>
                   </div>
-                  <button className="border border-[#408C2B] rounded-md h-[30px] md:h-12 text-[#408C2B] text-[8px] md:text-[18px] p-2 lg:px-4 min-w-[70px]">
+                  <button className="border border-[#408C2B] rounded-md h-[30px] md:h-12 text-[#408C2B] text-[8px] md:text-[18px] p-2 lg:px-4">
                     <Link href={"/cart"}>Add to Cart</Link>
                   </button>
                 </div>

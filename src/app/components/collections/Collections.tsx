@@ -12,7 +12,10 @@ export const Collections = () => {
         <ul className="flex flex-wrap gap-1 md:gap-4 justify-evenly mt-8">
           {collectionSection.collections.map((collection, i) => {
             return (
-              <li key={i} className="w-[160px] lg:w-[250px]">
+              <li
+                key={i}
+                className="max-w-[160px] md:max-w-[172px] lg:max-w-[200px] xl:max-w-[250px]"
+              >
                 <Image
                   src={collection.imgSrc}
                   alt={collection.name}

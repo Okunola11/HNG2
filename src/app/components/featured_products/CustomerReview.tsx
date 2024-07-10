@@ -26,7 +26,7 @@ export default function CustomerReview() {
                 return (
                   <li
                     key={i}
-                    className="w-[200px] md:w-[530px] border-2 border-[#CAECC0] flex-shrink-0 mr-2 p-2 rounded-[10px] flex flex-col"
+                    className="max-w-[350px] md:max-w-[600px] border-2 border-[#CAECC0] flex-shrink-0 mr-2 p-2 rounded-[10px] flex flex-col"
                   >
                     <div className="flex justify-between">
                       <Image
