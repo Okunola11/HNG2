@@ -6,7 +6,7 @@ import Link from "next/link";
 export const MightLikeProducts = () => {
   return (
     <section className="w-full mt-4 md:mt-14 md:min-h-[400px]">
-      <div className="w-11/12 mx-auto pt-4">
+      <div className="w-full mx-auto pt-4">
         <div className="flex justify-between">
           <p className="mb-2 font-[300] text-sm md:text-2xl small-spacing md:big-spacing">
             {mightLikeSection.featuredTitle}
@@ -23,7 +23,7 @@ export const MightLikeProducts = () => {
             return (
               <li
                 key={i}
-                className="max-w-[160px] md:max-w-[220px] lg:max-w-[295px] xl:max-w-[350px]"
+                className="max-w-[170px] md:max-w-[220px] lg:max-w-[295px] xl:max-w-[350px]"
               >
                 <div className="">
                   <Image
