@@ -30,7 +30,7 @@ export const MightLikeProducts = () => {
                     height={329}
                   />
                 </div>
-                <div className="h-[1px] w-full bg-[#E3E3E3] my-2"></div>
+                <div className="h-[0.5px] w-full bg-[#E3E3E3] my-2"></div>
                 <div className="flex justify-between">
                   <div className="max-w-[200px] md:w-[150px]">
                     <p className="text-[10px] md:text-[18px]">{product.name}</p>

@@ -14,7 +14,7 @@ export const FeaturedProducts = () => {
         <ul className="flex flex-wrap gap-1 md:gap-3 mt-8 justify-evenly md:w-5/6 mx-auto lg:w-full">
           {featuredSection.products.map((product, i) => {
             return (
-              <li key={i} className="w-[160px] md:w-[280px] lg:w-[350px]">
+              <li key={i} className="w-[160px] md:min-[280px] lg:w-[350px]">
                 <div className="">
                   <Image
                     src={product.imgSrc}
@@ -23,7 +23,7 @@ export const FeaturedProducts = () => {
                     height={329}
                   />
                 </div>
-                <div className="h-[1px] w-full bg-[#E3E3E3] my-2"></div>
+                <div className="h-[0.5px] w-full bg-[#E3E3E3] my-2"></div>
                 <div className="flex justify-between">
                   <div className="max-w-[200px] md:w-[150px]">
                     <p className="text-[10px] md:text-[18px]">{product.name}</p>

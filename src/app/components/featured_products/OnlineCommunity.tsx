@@ -9,7 +9,9 @@ export default function OnlineCommunity() {
         <h3 className={`${lora.className} md:text-5xl lg:text-[64px]`}>
           {communitySection.title}
         </h3>
-        <p className="md:text-base">{communitySection.paragraph}</p>
+        <p className="md:text-base dark:text-black">
+          {communitySection.paragraph}
+        </p>
         <div>
           <button
             className={`h-[40px] md:h-[48px] px-4 text-sm md:text-lg text-[#408C2B] font-400 border-b-2 border-[#408C2B]`}

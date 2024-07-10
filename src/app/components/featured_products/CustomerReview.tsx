@@ -9,7 +9,7 @@ export default function CustomerReview() {
           <p className="mb-2 font-[300] text-sm md:text-2xl small-spacing md:big-spacing">
             {customerReviewSection.title}
           </p>
-          <p className="font-[500] text-3xl md:text-[40px] text-[#0A0B0A] my-4">
+          <p className="font-[500] text-3xl md:text-[40px] text-[#0A0B0A] dark:text-[#CAECC0] my-4">
             {customerReviewSection.intro}
           </p>
           <div className="flex w-full gap-4 md:gap-6 max-h-[183px] md:max-h-[330px]">
